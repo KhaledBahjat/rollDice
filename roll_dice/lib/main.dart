@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roll_dice/gradient_container.dart';
 
 void main() => runApp(RollDice());
 
@@ -7,6 +8,11 @@ class RollDice extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        body: GradientContainer(),
+      ),
+    );
   }
 }
+
